@@ -5,38 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ridhi Tamirasa · Software Engineer</title>
   <meta name="description" content="Ridhi Tamirasa – SWE/ML engineer. RL for ISP auto‑tuning, OpenVINO/LangChain, full‑stack projects." />
-  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
-          colors: {
-            brand: {
-              50:'#eef2ff', 100:'#e0e7ff', 200:'#c7d2fe', 300:'#a5b4fc', 400:'#818cf8', 500:'#6366f1', 600:'#4f46e5', 700:'#4338ca', 800:'#3730a3', 900:'#312e81'
-            }
-          }
+          colors: { brand: { 50:'#eef2ff', 100:'#e0e7ff', 200:'#c7d2fe', 300:'#a5b4fc', 400:'#818cf8', 500:'#6366f1', 600:'#4f46e5', 700:'#4338ca', 800:'#3730a3', 900:'#312e81' } }
         }
       }
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    .card { @apply rounded-2xl shadow-lg p-6 bg-white/70 dark:bg-zinc-900/70 backdrop-blur border border-zinc-200 dark:border-zinc-800; }
-  </style>
+  html { scroll-behavior: smooth; }
+  .card { @apply rounded-2xl shadow-lg p-6 bg-white/70 dark:bg-zinc-900/70 backdrop-blur border border-zinc-200 dark:border-zinc-800; }
+
+  /* reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+  .revealed { opacity: 1; transform: none; }
+</style>
+
 </head>
 <body class="bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-900 dark:to-black text-zinc-900 dark:text-zinc-100">
   <header class="sticky top-0 z-10 backdrop-blur bg-white/70 dark:bg-zinc-900/60 border-b border-zinc-200/70 dark:border-zinc-800/70">
     <nav class="max-w-5xl mx-auto flex items-center justify-between py-3 px-4">
       <a href="#" class="font-extrabold tracking-tight text-lg">rt</a>
       <div class="hidden sm:flex gap-6">
+        <a href="#skills" class="hover:text-brand-500">Skills</a>
         <a href="#projects" class="hover:text-brand-500">Projects</a>
         <a href="#experience" class="hover:text-brand-500">Experience</a>
-        <a href="#writing" class="hover:text-brand-500">Writing</a>
         <a href="#contact" class="hover:text-brand-500">Contact</a>
       </div>
       <button id="modeToggle" class="px-3 py-1 rounded-xl border border-zinc-300 dark:border-zinc-700 text-sm">🌞/🌙</button>
@@ -45,75 +48,137 @@
 
   <main class="max-w-5xl mx-auto px-4">
     <!-- Hero -->
-    <section class="py-16 sm:py-24">
-      <div class="grid sm:grid-cols-[1fr,280px] gap-8 items-center">
-        <div>
-          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">Hi, I'm Ridhi — SWE/ML engineer building reliable AI systems.</h1>
-          <p class="mt-4 text-zinc-600 dark:text-zinc-300 max-w-prose">I am currently a Software Engineering intern at Intel and love all things ML.</p>
-          <div class="mt-6 flex gap-3">
+<!-- HERO (full-screen, scroll-to-fade/scale) -->
+<section id="hero" class="relative h-[250svh]">
+  <!-- sticky viewport layer -->
+  <div class="sticky top-0 h-[100svh] flex items-center">
+    <div id="heroContent" class="w-full">
+      <div class="grid sm:grid-cols-[1fr,320px] gap-10 items-center">
+        <div class="text-center sm:text-left">
+          <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+            Hi, I'm <span class="text-brand-600">Ridhi</span> — SWE/ML engineer
+            building reliable AI systems.
+          </h1>
+          <p class="mt-4 text-zinc-600 dark:text-zinc-300 max-w-prose mx-auto sm:mx-0">
+            I’m a Software Engineering intern at Intel and love all things ML.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
             <a href="#projects" class="inline-block bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-xl">See projects</a>
+            <a href="#skills" class="inline-block border border-zinc-300 dark:border-zinc-700 px-4 py-2 rounded-xl">Skills</a>
             <a href="mailto:ridhi@example.com" class="inline-block border border-zinc-300 dark:border-zinc-700 px-4 py-2 rounded-xl">Email me</a>
           </div>
-          <div class="mt-3 text-xs text-zinc-500"> CA · Open to SWE/ML new grad roles</div>
+          <div class="mt-3 text-xs text-zinc-500 text-center sm:text-left">CA · Open to SWE/ML new-grad roles</div>
         </div>
+
+        <!-- Photo -->
         <div class="card flex flex-col items-center text-center">
-          <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Ridhi avatar" class="w-32 h-32 rounded-full object-cover" onerror="this.style.display='none'">
-          <div class="mt-4">
-            <div class="font-semibold">Core stack</div>
-            <div class="text-sm text-zinc-500">Python · PyTorch · OpenVINO · React · Node · Mongo</div>
+          <img
+            src="1743688399187.jpg"
+            alt="Ridhi avatar"
+            class="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full object-cover ring-4 ring-white dark:ring-zinc-900 shadow-xl"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- bounce arrow -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-zinc-400">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Skills -->
+<section id="skills" class="py-12 reveal"> ... </section>
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <div class="mt-6 grid gap-6 sm:grid-cols-3">
+        <div class="card">
+          <div class="font-semibold">Languages</div>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Python</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Java</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">C</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">C++</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">TypeScript/JS</span>
           </div>
-          <div class="mt-4 grid grid-cols-2 gap-2 w-full">
-            <a href="#resume" class="card !p-3 text-center">Résumé</a>
-            <a href="https://github.com/rtamirasa" target="_blank" rel="noreferrer" class="card !p-3 text-center">GitHub</a>
+        </div>
+        <div class="card">
+          <div class="font-semibold">Frameworks</div>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">PyTorch</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Stable‑Baselines3</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">OpenVINO</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">React</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Node</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="font-semibold">Tools & Infra</div>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">LangChain</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Optuna</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">MongoDB</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">Git/GitHub</span>
+            <span class="px-2 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800">GCP</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-12">
-      <h2 class="text-2xl font-bold">Projects</h2>
-      <div class="mt-6 grid sm:grid-cols-2 gap-6">
-        <article class="card">
-          <div class="flex items-start justify-between">
-            <h3 class="font-semibold">RL ISP Auto‑Tuning</h3>
-            <span class="text-xs text-zinc-500">2025</span>
-          </div>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">PPO/SAC agents tune ISP parameters toward studio references; OpenVINO for fast eval; +0.05–0.10 SSIM on val vs baseline.</p>
-          <ul class="mt-3 text-sm list-disc ml-5">
-            <li>Gymnasium env with patch sampling</li>
-            <li>Reward: SSIM + edge + color fidelity</li>
-            <li>Charts & checkpoints reproducible</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="flex items-start justify-between">
-            <h3 class="font-semibold">BLDT + GenAI Agent</h3>
-            <span class="text-xs text-zinc-500">2025</span>
-          </div>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Local Qwen (OpenVINO GenAI) + LangChain tools to summarize diagnostics and validate outputs with a verification agent.</p>
-          <ul class="mt-3 text-sm list-disc ml-5">
-            <li>Structured JSON answers</li>
-            <li>STDIO transport; FastMCP tools</li>
-            <li>Fully offline demo</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="flex items-start justify-between">
-            <h3 class="font-semibold">PassTheAux</h3>
-            <span class="text-xs text-zinc-500">2024</span>
-          </div>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Collaborative playlist web app. Host/guest sessions, QR joins, voting, and live queue. React + Node + Mongo.</p>
-        </article>
-        <article class="card">
-          <div class="flex items-start justify-between">
-            <h3 class="font-semibold">Task Planner</h3>
-            <span class="text-xs text-zinc-500">2025</span>
-          </div>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Full‑stack CRUD with charts and weekly summaries. Deployed on GCP App Engine.</p>
-        </article>
+<!-- Projects -->
+<section id="projects" class="py-12 reveal">
+  <h2 class="text-2xl font-bold text-center">My Projects</h2>
+
+  <div class="mt-8 grid gap-6 sm:grid-cols-2">
+    <!-- Task Planner (MERN) -->
+    <article class="card flex flex-col">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Charts, CRUD, Auth</div>
+      <h3 class="font-semibold text-lg">Task Planner (MERN)</h3>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Full-stack task tracking with charts and category analytics.</p>
+      <div class="mt-4 flex gap-2">
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://taskplanner-mern-269e.vercel.app/" target="_blank">Live</a>
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/taskplanner-mern.html">Details</a>
       </div>
-    </section>
+    </article>
+
+    <!-- FullStackWeb (Social app) -->
+    <article class="card flex flex-col">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Auth, Likes, Dark mode</div>
+      <h3 class="font-semibold text-lg">FullStackWeb (Social)</h3>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">MERN social app with JWT auth, likes and dark mode.</p>
+      <div class="mt-4 flex gap-2">
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://socialmedia-pi-three.vercel.app" target="_blank">Live</a>
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/fullstackweb1.html">Details</a>
+      </div>
+    </article>
+
+    <!-- Pantry Management (Next.js + Firebase) -->
+    <article class="card flex flex-col">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Next.js, Firebase</div>
+      <h3 class="font-semibold text-lg">Pantry Management</h3>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Realtime inventory with expiry reminders & filters.</p>
+      <div class="mt-4 flex gap-2">
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/pantry-managment.html">Details</a>
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://github.com/rtamirasa/pantry-managment" target="_blank">Code</a>
+      </div>
+    </article>
+
+    <!-- Potato Disease (CV/ML) -->
+    <article class="card flex flex-col">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">CV, Jupyter</div>
+      <h3 class="font-semibold text-lg">Potato Disease (CV)</h3>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">PlantVillage-based disease classification notebooks.</p>
+      <div class="mt-4 flex gap-2">
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/potatodisease.html">Details</a>
+        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://github.com/rtamirasa/potatodisease" target="_blank">Code</a>
+      </div>
+    </article>
+  </div>
+</section>
 
     <!-- Experience -->
     <section id="experience" class="py-12">
@@ -133,8 +198,6 @@
       </div>
     </section>
 
-    
-
     <!-- Contact -->
     <section id="contact" class="py-12">
       <h2 class="text-2xl font-bold">Contact</h2>
@@ -147,18 +210,39 @@
   </main>
 
   <script>
-    // Dark mode toggle (persists across visits)
     const toggle = document.getElementById('modeToggle');
-    const setMode = (d) => {
-      if (d) document.documentElement.classList.add('dark');
-      else document.documentElement.classList.remove('dark');
-      localStorage.setItem('rt-dark', d ? '1' : '0');
-    };
+    const setMode = (d) => { d ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark'); localStorage.setItem('rt-dark', d ? '1' : '0'); };
     setMode(localStorage.getItem('rt-dark') === '1');
     toggle.addEventListener('click', () => setMode(!document.documentElement.classList.contains('dark')));
-
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
+     const hero = document.getElementById('hero');
+  const heroContent = document.getElementById('heroContent');
+
+  function updateHero() {
+    if (!hero || !heroContent) return;
+    const rect = hero.getBoundingClientRect();          // position of the 200vh container
+    const total = hero.offsetHeight - window.innerHeight; // scrollable distance inside hero
+    const progressed = Math.min(Math.max(-rect.top, 0), total);
+    const t = total ? progressed / total : 0;            // 0 -> 1 as we scroll through hero
+
+    const scale = 1 - t * 0.2;                           // 1 -> 0.8
+    const opacity = 1 - t;                               // 1 -> 0
+    heroContent.style.transform = `scale(${scale})`;
+    heroContent.style.opacity = opacity;
+  }
+  document.addEventListener('scroll', updateHero, { passive: true });
+  window.addEventListener('resize', updateHero);
+  updateHero();
+
+  // Section reveal when in view
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  
+  
+  
   </script>
 </body>
 </html>
