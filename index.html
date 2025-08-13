@@ -1,9 +1,177 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ridhi Tamirasa · Software Engineer</title>
+  <meta name="description" content="Ridhi Tamirasa – SWE/ML engineer. RL for ISP auto‑tuning, OpenVINO/LangChain, full‑stack projects." />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50:'#eef2ff', 100:'#e0e7ff', 200:'#c7d2fe', 300:'#a5b4fc', 400:'#818cf8', 500:'#6366f1', 600:'#4f46e5', 700:'#4338ca', 800:'#3730a3', 900:'#312e81'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .card { @apply rounded-2xl shadow-lg p-6 bg-white/70 dark:bg-zinc-900/70 backdrop-blur border border-zinc-200 dark:border-zinc-800; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-900 dark:to-black text-zinc-900 dark:text-zinc-100">
+  <header class="sticky top-0 z-10 backdrop-blur bg-white/70 dark:bg-zinc-900/60 border-b border-zinc-200/70 dark:border-zinc-800/70">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between py-3 px-4">
+      <a href="#" class="font-extrabold tracking-tight text-lg">rt</a>
+      <div class="hidden sm:flex gap-6">
+        <a href="#projects" class="hover:text-brand-500">Projects</a>
+        <a href="#experience" class="hover:text-brand-500">Experience</a>
+        <a href="#writing" class="hover:text-brand-500">Writing</a>
+        <a href="#contact" class="hover:text-brand-500">Contact</a>
+      </div>
+      <button id="modeToggle" class="px-3 py-1 rounded-xl border border-zinc-300 dark:border-zinc-700 text-sm">🌞/🌙</button>
+    </nav>
+  </header>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <main class="max-w-5xl mx-auto px-4">
+    <!-- Hero -->
+    <section class="py-16 sm:py-24">
+      <div class="grid sm:grid-cols-[1fr,280px] gap-8 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">Hi, I'm Ridhi — SWE/ML engineer building reliable AI systems.</h1>
+          <p class="mt-4 text-zinc-600 dark:text-zinc-300 max-w-prose">I work on RL-based ISP auto‑tuning at Intel, deploy compact LLMs with OpenVINO, and ship clean full‑stack apps. I like measurable wins, sharp UX, and maintainable code.</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#projects" class="inline-block bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-xl">See projects</a>
+            <a href="mailto:ridhi@example.com" class="inline-block border border-zinc-300 dark:border-zinc-700 px-4 py-2 rounded-xl">Email me</a>
+          </div>
+          <div class="mt-3 text-xs text-zinc-500">Folsom, CA · Open to SWE/ML new grad roles</div>
+        </div>
+        <div class="card flex flex-col items-center text-center">
+          <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Ridhi avatar" class="w-32 h-32 rounded-full object-cover" onerror="this.style.display='none'">
+          <div class="mt-4">
+            <div class="font-semibold">Core stack</div>
+            <div class="text-sm text-zinc-500">Python · PyTorch · OpenVINO · React · Node · Mongo</div>
+          </div>
+          <div class="mt-4 grid grid-cols-2 gap-2 w-full">
+            <a href="#resume" class="card !p-3 text-center">Résumé</a>
+            <a href="https://github.com/rtamirasa" target="_blank" rel="noreferrer" class="card !p-3 text-center">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects" class="py-12">
+      <h2 class="text-2xl font-bold">Projects</h2>
+      <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <article class="card">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">RL ISP Auto‑Tuning</h3>
+            <span class="text-xs text-zinc-500">2025</span>
+          </div>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">PPO/SAC agents tune ISP parameters toward studio references; OpenVINO for fast eval; +0.05–0.10 SSIM on val vs baseline.</p>
+          <ul class="mt-3 text-sm list-disc ml-5">
+            <li>Gymnasium env with patch sampling</li>
+            <li>Reward: SSIM + edge + color fidelity</li>
+            <li>Charts & checkpoints reproducible</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">BLDT + GenAI Agent</h3>
+            <span class="text-xs text-zinc-500">2025</span>
+          </div>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Local Qwen (OpenVINO GenAI) + LangChain tools to summarize diagnostics and validate outputs with a verification agent.</p>
+          <ul class="mt-3 text-sm list-disc ml-5">
+            <li>Structured JSON answers</li>
+            <li>STDIO transport; FastMCP tools</li>
+            <li>Fully offline demo</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">PassTheAux</h3>
+            <span class="text-xs text-zinc-500">2024</span>
+          </div>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Collaborative playlist web app. Host/guest sessions, QR joins, voting, and live queue. React + Node + Mongo.</p>
+        </article>
+        <article class="card">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">Task Planner</h3>
+            <span class="text-xs text-zinc-500">2025</span>
+          </div>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Full‑stack CRUD with charts and weekly summaries. Deployed on GCP App Engine.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-12">
+      <h2 class="text-2xl font-bold">Experience</h2>
+      <div class="mt-6 grid gap-4">
+        <div class="card">
+          <div class="flex items-center justify-between">
+            <div class="font-semibold">Intel · Software Engineering Co‑op</div>
+            <div class="text-xs text-zinc-500">May 2025 – Present · Folsom, CA</div>
+          </div>
+          <ul class="mt-2 text-sm list-disc ml-5">
+            <li>Built RL pipeline (PPO/SAC) for ISP parameter tuning; +15% quality metrics vs baseline.</li>
+            <li>Integrated OpenVINO GenAI + LangChain with FastMCP tools for offline diagnostics.</li>
+            <li>Shipped reproducible training & eval with Optuna sweeps and metrics dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section id="writing" class="py-12">
+      <h2 class="text-2xl font-bold">Writing</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <a class="card block" href="#" target="_blank" rel="noreferrer">
+          <div class="font-semibold">From LLMs to Learning Agents: Why PPO matters</div>
+          <div class="text-sm text-zinc-500">Notes from experiments & a gentle explainer.</div>
+        </a>
+        <a class="card block" href="#" target="_blank" rel="noreferrer">
+          <div class="font-semibold">RL for ISP Auto‑tuning: a practical guide</div>
+          <div class="text-sm text-zinc-500">Datasets, rewards, pitfalls, and benchmarks.</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <div class="mt-4 card">
+        <p>Best way to reach me is email. I’m open to SWE/ML new‑grad roles and research‑adjacent work.</p>
+        <div class="mt-3 text-sm text-zinc-500">ridhi@example.com · <a class="underline" href="https://www.linkedin.com/">LinkedIn</a></div>
+      </div>
+      <footer class="py-12 text-center text-xs text-zinc-500">© <span id="year"></span> Ridhi Tamirasa</footer>
+    </section>
+  </main>
+
+  <script>
+    // Dark mode toggle (persists across visits)
+    const toggle = document.getElementById('modeToggle');
+    const setMode = (d) => {
+      if (d) document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+      localStorage.setItem('rt-dark', d ? '1' : '0');
+    };
+    setMode(localStorage.getItem('rt-dark') === '1');
+    toggle.addEventListener('click', () => setMode(!document.documentElement.classList.contains('dark')));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
