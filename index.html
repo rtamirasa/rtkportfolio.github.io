@@ -43,6 +43,23 @@
             bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700
             text-zinc-800 dark:text-zinc-100;
     }
+      .chip {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    border: 1px solid #e4e4e7;
+    background-color: #f4f4f5;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .chip {
+      border-color: #3f3f46;
+      background-color: #27272a;
+    }
+  }
+          
 
     /* Timeline */
     .timeline { @apply relative max-w-4xl mx-auto; }
@@ -137,55 +154,102 @@
 
 
   <!-- Skills -->
-<section id="skills" class="relative h-[250svh]">
+<!-- Skills -->
+<section id="skills" class="relative h-[200svh]">
   <div id="skillsContent" class="sticky top-0 h-[100svh] flex items-center transition-transform transition-opacity duration-500 ease-in-out">
-     <div class="w-full">
-      <h2 class="text-2xl font-bold">Skills</h2>
-      <div class="mt-6 grid gap-10 sm:grid-cols-3">
-    <div>
-      <h3 class="font-semibold mb-3">Languages</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Python</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Java</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">C</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">C++</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">TypeScript</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">JavaScript</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">R</span>
-      </div>
-    </div>
-    <div>
-      <h3 class="font-semibold mb-3">Frameworks</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">React</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Next.js</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Tailwind</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Express</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Flask</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">FastAPI</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">PyTorch</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Stable‑Baselines3</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Gymnasium</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">OpenVINO</span>
-      </div>
-    </div>
-    <div>
-      <h3 class="font-semibold mb-3">Tools &amp; Infra</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">LangChain</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Optuna</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Docker</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">AWS</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Azure</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">GCP</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">PostgreSQL</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">MongoDB</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Firebase</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Git/GitHub</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">OpenCV</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">NumPy</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">Pandas</span>
-        <span class="inline-flex items-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs">scikit‑learn</span>
+    <div class="w-full">
+      <h2 class="text-4xl font-bold mb-10">Skills</h2>
+      <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+        
+        <!-- Languages -->
+        <div>
+          <h3 class="flex items-center font-semibold mb-3 text-lg">
+            <span class="mr-2">🔠</span> Languages
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <!-- ML & AI -->
+        <div>
+          <h3 class="flex items-center font-semibold mb-3 text-lg">
+            <span class="mr-2">🧠</span> ML & AI
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">PyTorch</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Stable-Baselines3</span>
+            <span class="chip">Gymnasium</span>
+            <span class="chip">OpenVINO</span>
+            <span class="chip">Optuna</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">OpenCV</span>
+          </div>
+        </div>
+
+        <!-- Web & APIs -->
+        <div>
+          <h3 class="flex items-center font-semibold mb-3 text-lg">
+            <span class="mr-2">🌐</span> Web & APIs
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Express</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Flask</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div>
+          <h3 class="flex items-center font-semibold mb-3 text-lg">
+            <span class="mr-2">☁️</span> Infrastructure
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="chip">Docker</span>
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Azure</span>
+            <span class="chip">GCP</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Firebase</span>
+          </div>
+        </div>
+
+        <!-- AI Tools -->
+       <div>
+  <h3 class="flex items-center font-semibold mb-3 text-lg">
+    <span class="mr-2">🔧</span> AI Tools & Frameworks
+  </h3>
+  <div class="flex flex-wrap gap-2">
+    <span class="chip">LangChain</span>
+    <span class="chip">LlamaIndex</span>
+    <span class="chip">LangGraph</span>
+    <span class="chip">AutoGen</span>
+    <span class="chip">Semantic Kernel</span>
+    <span class="chip">HuggingFace</span>
+    <span class="chip">OpenVINO</span>
+    <span class="chip">Optuna</span>
+    <span class="chip">Kaggle</span>
+    <span class="chip">PyTorch Lightning</span>
+    <span class="chip">TensorBoard</span>
+    <span class="chip">Transformers</span>
+    <span class="chip">Diffusers</span>
+    <span class="chip">DVC</span>
+    <span class="chip">MLflow</span>
+    <span class="chip">Scikit-Optimize</span>
+  </div>
+</div>
       </div>
     </div>
   </div>
@@ -195,10 +259,12 @@
 
 
 
-<section id="resume" class="relative h-[250svh]">
+<section id="resume" class="relative h-[500svh] mb-40">
   <div id="resumeContent" class="sticky top-0 h-[100svh] flex items-center transition-transform transition-opacity duration-500 ease-in-out">
     <div class="w-full">
-      <h2 class="section-title mb-12"><span class="title-underline">Resume</span></h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-12">
+        <span class="title-underline">Experience</span>
+      </h2>
       <div class="max-w-4xl mx-auto relative">
         <div class="absolute left-4 sm:left-6 top-0 bottom-0 border-l-2 border-brand-200 dark:border-brand-700"></div>
 
@@ -207,78 +273,106 @@
           <span class="t-dot"></span>
           <h3 class="font-semibold">Software Engineering Co-op — Intel</h3>
           <div class="text-sm text-zinc-500 mb-2">May 2025 – Present · Folsom, CA</div>
-          <ul class="list-disc ml-5 text-sm space-y-1">
-            <li>Architected modular AI diagnostic platform (LangChain + OpenVINO), cutting setup overhead by ~40%.</li>
-            <li>Built local GenAI pipeline (Qwen-3B-INT8 + LangChain) with HTTP/STDIO and verification agent.</li>
-            <li>Benchmarked RL (PPO/SAC) & CNN pipelines with <1.2 ms latency and <500 MB memory.</li>
-            <li>Refactored toolchains to a scalable codebase, reducing integration cycles by ~25%.</li>
-          </ul>
+           <ul class="list-disc ml-5 text-sm space-y-1">
+          <li><strong>AI-Powered Optimization Systems:</strong> Designed and deployed intelligent systems that used reinforcement learning and computer vision to automatically tune parameters for image processing, improving quality metrics by over 15%.</li>
+          <li><strong>Backend Tooling Automation:</strong> Developed modular Python services and RESTful APIs to automate diagnostics and system-level tasks across multiple platforms, improving developer efficiency and reliability.</li>
+            <li><strong>Scalable Model Training Pipelines:</strong> Built training pipelines using PyTorch, RL libraries, and mixed-precision optimization to efficiently train and deploy deep learning models on large image datasets.</li>
+          <li><strong>LLM Integration for Local Inference:</strong> Integrated and deployed fine-tuned language models for offline use, enabling natural language system interactions without relying on cloud APIs.</li>
+         <li><strong>Cross-Platform Agent Frameworks:</strong> Contributed to internal tooling using modern agent frameworks (e.g., Microsoft AutoGen) to enable seamless, plug-and-play automation of multi-step tasks across the stack.</li>
+        </ul>
         </article>
 
-        <!-- Item 2 -->
-        <article class="relative pl-12 sm:pl-16 mb-10">
-          <span class="t-dot"></span>
-          <h3 class="font-semibold">Data Engineer — CDC Protect</h3>
-          <div class="text-sm text-zinc-500 mb-2">Aug 2023 – Feb 2025 · West Lafayette, IN</div>
-          <ul class="list-disc ml-5 text-sm space-y-1">
-            <li>Built Python/Selenium/BeautifulSoup scraping pipeline for hospital sites.</li>
-            <li>Automated keyword extraction; +30% retrieval efficiency.</li>
-            <li>Developed CNNs for image similarity; +15% classification accuracy.</li>
-          </ul>
-        </article>
+    <!-- Item 2 -->
+<article class="relative pl-12 sm:pl-16 mb-10">
+  <span class="t-dot"></span>
+  <h3 class="font-semibold">Data Engineer — CDC Protect</h3>
+  <div class="text-sm text-zinc-500 mb-2">Aug 2023 – Feb 2025 · West Lafayette, IN</div>
+  <ul class="list-disc ml-5 text-sm space-y-1">
+    <li><strong>Data Pipeline Development:</strong> Built a scalable data pipeline using Python, Beautiful Soup, and Selenium for scraping structured and unstructured data from children's hospital websites.</li>
+    <li><strong>Automated Data Processing:</strong> Transformed unstructured data into structured formats and automated keyword extraction workflows, resulting in a 30% increase in data retrieval efficiency and improved analysis accuracy.</li>
+    <li><strong>Image Classification Accuracy:</strong> Engineered Convolutional Neural Networks (CNNs) for image similarity analysis, improving classification accuracy by 15%.</li>
+  </ul>
+</article>
 
-        <!-- Item 3 -->
-        <article class="relative pl-12 sm:pl-16">
-          <span class="t-dot"></span>
-          <h3 class="font-semibold">Software Engineering Intern — Quantum Mechanics Lab</h3>
-          <div class="text-sm text-zinc-500 mb-2">May 2023 – Aug 2023 · West Lafayette, IN</div>
-          <ul class="list-disc ml-5 text-sm space-y-1">
-            <li>Automated DFT simulations of halide perovskites in Python.</li>
-            <li>Built regression models for property prediction; ~20% accuracy gain.</li>
-            <li>Applied SISSO-based regression & neural nets for feature extraction.</li>
-          </ul>
-        </article>
+<!-- Item 3 -->
+<article class="relative pl-12 sm:pl-16 mb-10">
+  <span class="t-dot"></span>
+  <h3 class="font-semibold">Software Engineering Intern — Quantum Mechanics Lab</h3>
+  <div class="text-sm text-zinc-500 mb-2">May 2023 – Aug 2023 · West Lafayette, IN</div>
+  <ul class="list-disc ml-5 text-sm space-y-1">
+    <li><strong>Simulation Automation:</strong> Developed and optimized Python scripts to automate Halide Perovskite simulations using Density Functional Theory, significantly accelerating research iterations.</li>
+    <li><strong>ML-Driven Property Prediction:</strong> Implemented regression models and applied SISSO-based techniques and neural networks to extract features and predict material properties, improving accuracy by 20%.</li>
+  </ul>
+</article>
+
+<!-- Item 4 -->
+<article class="relative pl-12 sm:pl-16 mb-10">
+  <span class="t-dot"></span>
+  <h3 class="font-semibold">Undergraduate Student Researcher — Artificial Code Generation</h3>
+  <div class="text-sm text-zinc-500 mb-2">May 2023 – Aug 2023 · Remote</div>
+  <ul class="list-disc ml-5 text-sm space-y-1">
+    <li><strong>Program Generation Research:</strong> Studied under Dr. Lu to evaluate emerging frameworks (AlphaCode, CodeRL, Parsel) for automated code synthesis.</li>
+    <li><strong>Benchmarking & Evaluation:</strong> Compared framework performance against state-of-the-art models like ChatGPT on real-world coding tasks.</li>
+    <li><strong>Collaboration & Reporting:</strong> Worked with a research team to analyze tool limitations, present results, and propose improvements for program synthesis methods.</li>
+  </ul>
+</article>
+
+
+      
+
       </div>
     </div>
   </div>
 </section>
 
+
 <script>
   const resume = document.getElementById('resume');
   const resumeContent = document.getElementById('resumeContent');
 
+  function sizeResume() {
+    if (!resume || !resumeContent) return;
+    // Set outer section height = inner content height + viewport height
+    const innerHeight = resumeContent.scrollHeight;
+    resume.style.height = (innerHeight + window.innerHeight) + 'px';
+  }
+
   function updateResume() {
     if (!resume || !resumeContent) return;
     const rect = resume.getBoundingClientRect();
-    const total = resume.offsetHeight - window.innerHeight;
+    const total = Math.max(resume.offsetHeight - window.innerHeight, 1);
     const progressed = Math.min(Math.max(-rect.top, 0), total);
-    const t = total ? progressed / total : 0;
+    const t = progressed / total;
 
-    const scale = 1 - t * 0.2;
-    const opacity = 1 - t;
+    // Don’t shrink/fade until the user has scrolled through the whole content
+    // Only apply fade/scale after ~90% progress
+    const trigger = 0.9;
+    let scale = 1, opacity = 1;
+    if (t > trigger) {
+      const eased = (t - trigger) / (1 - trigger); // 0 → 1 only after trigger
+      scale = 1 - eased * 0.1;   // shrink up to 10%
+      opacity = 1 - eased * 0.2; // fade to 80%
+    }
+
     resumeContent.style.transform = `scale(${scale})`;
     resumeContent.style.opacity = opacity;
   }
 
+  // IntersectionObserver for dot filling stays the same
   const experienceItems = document.querySelectorAll('#resume article');
   const resumeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const dot = entry.target.querySelector('.t-dot');
-        dot?.classList.add('filled');
+        entry.target.querySelector('.t-dot')?.classList.add('filled');
         resumeObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.15 });
-
   experienceItems.forEach(item => resumeObserver.observe(item));
 
-  document.addEventListener('scroll', () => {
-    updateResume();
-  }, { passive: true });
-
-  window.addEventListener('resize', updateResume);
-  updateResume();
+  window.addEventListener('load', () => { sizeResume(); updateResume(); });
+  window.addEventListener('resize', () => { sizeResume(); updateResume(); });
+  document.addEventListener('scroll', updateResume, { passive: true });
 </script>
 
 <style>
@@ -297,55 +391,96 @@
 
     <!-- Projects -->
 <!-- Projects -->
+<!-- Projects -->
 <section id="projects" class="py-12 reveal">
-  <h2 class="text-2xl font-bold text-center">My Projects</h2>
+  <h2 class="text-4xl font-bold text-left">My Projects</h2>
 
   <div class="mt-8 grid gap-6 sm:grid-cols-2">
     <!-- Task Planner (MERN) -->
-    <article class="card flex flex-col">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Charts, CRUD, Auth</div>
+    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Charts · CRUD · Auth</div>
       <h3 class="font-semibold text-lg">Task Planner (MERN)</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Full-stack task tracking with charts and category analytics.</p>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Full-stack task manager with category analytics and authentication.</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">MongoDB</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Express</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Node.js</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Charts</span>
+      </div>
       <div class="mt-4 flex gap-2">
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://taskplanner-mern-269e.vercel.app/" target="_blank">Live</a>
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/taskplanner-mern.html">Details</a>
+        <a class="btn" href="https://taskplanner-mern-269e.vercel.app/" target="_blank">Live</a>
+        <a class="btn" href="/projects/taskplanner-mern.html">Details</a>
       </div>
     </article>
 
     <!-- FullStackWeb (Social app) -->
-    <article class="card flex flex-col">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Auth, Likes, Dark mode</div>
+    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Auth · Likes · Dark Mode</div>
       <h3 class="font-semibold text-lg">FullStackWeb (Social)</h3>
       <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">MERN social app with JWT auth, likes and dark mode.</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">MongoDB</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">JWT</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Likes</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Dark Mode</span>
+      </div>
       <div class="mt-4 flex gap-2">
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://socialmedia-pi-three.vercel.app" target="_blank">Live</a>
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/fullstackweb1.html">Details</a>
+        <a class="btn" href="https://socialmedia-pi-three.vercel.app" target="_blank">Live</a>
+        <a class="btn" href="/projects/fullstackweb1.html">Details</a>
       </div>
     </article>
 
-    <!-- Pantry Management (Next.js + Firebase) -->
-    <article class="card flex flex-col">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Next.js, Firebase</div>
+    <!-- Pantry Management -->
+    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">Next.js · Firebase</div>
       <h3 class="font-semibold text-lg">Pantry Management</h3>
       <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Realtime inventory with expiry reminders & filters.</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Next.js</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Firebase</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Realtime DB</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Inventory</span>
+      </div>
       <div class="mt-4 flex gap-2">
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/pantry-managment.html">Details</a>
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://github.com/rtamirasa/pantry-managment" target="_blank">Code</a>
+        <a class="btn" href="/projects/pantry-managment.html">Details</a>
+        <a class="btn" href="https://github.com/rtamirasa/pantry-managment" target="_blank">Code</a>
       </div>
     </article>
 
-    <!-- Potato Disease (CV/ML) -->
-    <article class="card flex flex-col">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">CV, Jupyter</div>
+    <!-- Potato Disease -->
+    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center text-sm">CV · Jupyter</div>
       <h3 class="font-semibold text-lg">Potato Disease (CV)</h3>
       <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">PlantVillage-based disease classification notebooks.</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">OpenCV</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">CNN</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Jupyter</span>
+      </div>
       <div class="mt-4 flex gap-2">
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="/projects/potatodisease.html">Details</a>
-        <a class="px-3 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700" href="https://github.com/rtamirasa/potatodisease" target="_blank">Code</a>
+        <a class="btn" href="/projects/potatodisease.html">Details</a>
+        <a class="btn" href="https://github.com/rtamirasa/potatodisease" target="_blank">Code</a>
       </div>
     </article>
   </div>
 </section>
+
+<style>
+  .btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid #d4d4d8;
+    font-size: 0.875rem;
+    transition: background 0.2s;
+  }
+  .btn:hover {
+    background-color: #f4f4f5;
+  }
+</style>
+
 
     <!-- Contact -->
     <section id="contact" class="py-12">
