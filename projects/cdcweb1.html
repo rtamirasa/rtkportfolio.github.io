@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CDC Protect · Ridhi Tamirasa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          },
+          colors: {
+            brand: {
+              600: '#4f46e5'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+       .card {
+        --tw-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        border: 1px solid #e5e7eb;
+      }
+      .chip {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 9999px;
+        background-color: #f4f4f5; /* zinc-100 */
+        display: inline-block;
+      }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-8">
+    <header class="flex items-center justify-between">
+      <a href="C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\index.html" class="text-sm text-zinc-500 hover:text-zinc-800">← Back</a>
+      <a href="#" target="_blank" class="px-4 py-2 rounded-xl bg-brand-600 text-white">Available Upon Request</a>
+    </header>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <!-- Left: Image -->
+      <div class="rounded-xl overflow-hidden shadow-md">
+        <img src="C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\Images\Screenshot 2025-08-16 190015.png" alt="CDC Project Screenshot" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Right: Info -->
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">CDC Protect · Data Analyzation to Save Lives</h1>
+        <p class="text-zinc-600 mb-4">
+          As part of the CDC Protect team, I built robust web scrapers and data pipelines to analyze cannabinoid data, focusing on the visual similarity between edible cannabis packaging and children's candy packaging. The project highlighted risks of confusing designs and the need for stronger regulation.
+        </p>
+
+        <h2 class="font-semibold text-lg mb-1">Highlights</h2>
+        <ul class="list-disc ml-5 text-sm text-zinc-700 leading-6 mb-4">
+          <li>Designed a recursive scraper (100+ layers) in Python using BeautifulSoup, Requests, and regex to gather structured/unstructured hospital website data.</li>
+          <li>Developed URL management and retry/error-handling logic for resilience and efficiency.</li>
+          <li>Automated distributed scraping with Slurm for HPC-scale data collection.</li>
+          <li>Built dual scraping pipelines (Selenium for dynamic sites, BeautifulSoup for static sites).</li>
+          <li>Created CNNs to compare edible packaging with children’s candy, achieving +15% accuracy improvement.</li>
+          <li>Performed statistical analysis on THC concentrations with Pandas and visualized insights via treemaps, bar charts, and histograms.</li>
+        </ul>
+
+        <h2 class="font-semibold text-lg mb-1">Stack</h2>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="chip">Python</span>
+          <span class="chip">BeautifulSoup</span>
+          <span class="chip">Selenium</span>
+          <span class="chip">Requests</span>
+          <span class="chip">Regex</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">TensorFlow/CNN</span>
+          <span class="chip">Slurm</span>
+          <span class="chip">GCP</span>
+          <span class="chip">Data Visualization</span>
+        </div>
+
+        <div class="flex gap-3">
+          <a href="#" target="_blank" class="px-4 py-2 rounded-xl border border-zinc-300 text-sm">GitHub (Private)</a>
+          <a href="#" target="_blank" class="px-4 py-2 rounded-xl border border-zinc-300 text-sm">Details</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
