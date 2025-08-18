@@ -1,39 +1,76 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Potato Disease (CV/ML) · Ridhi Tamirasa</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui']},colors:{brand:{600:'#4f46e5'}}}}}</script>
-<style>.card{--tw-shadow:0 10px 25px -10px rgba(0,0,0,.25);border-radius:1rem;padding:1.5rem;border:1px solid #e5e7eb}</style>
-</head><body class="bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
-<main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Potato Disease Classification · Ridhi Tamirasa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] },
+          colors: { brand: { 600: '#4f46e5' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    .card { --tw-shadow: 0 10px 25px -10px rgba(0,0,0,.25); border-radius: 1rem; padding: 1.5rem; border: 1px solid #e5e7eb; }
+    .chip { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 9999px; background-color: #f4f4f5; display: inline-block; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
+<main class="max-w-6xl mx-auto px-4 py-12 space-y-8">
   <header class="flex items-center justify-between">
-    <a href="/" class="text-sm text-zinc-500 hover:text-zinc-800">← Back</a>
-    <a href="https://github.com/rtamirasa/potatodisease" target="_blank" class="px-4 py-2 rounded-xl bg-brand-600 text-white">View Code</a>
+    <a href="C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\index.html" class="text-sm text-zinc-500 hover:text-zinc-800">← Back</a>
+    <a href="https://github.com/rtamirasa/potatodisease" target="_blank" class="px-4 py-2 rounded-xl bg-brand-600 text-white">GitHub</a>
   </header>
 
-  <h1 class="text-3xl sm:text-4xl font-extrabold">Potato Disease – Computer Vision</h1>
-  <p class="text-zinc-600">Jupyter notebooks exploring disease classification on PlantVillage images; model training & experiments.</p>
+  <div class="grid md:grid-cols-2 gap-10 items-start">
+    <!-- Left: Image -->
+    <div class="rounded-xl overflow-hidden shadow-md">
+      <img src= "C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\Images\image.png" 
+           alt="Potato Disease Classification Screenshot" class="w-full h-auto object-cover">
+    </div>
 
-  <div class="grid md:grid-cols-2 gap-6">
-    <section class="card">
-      <h2 class="font-semibold mb-2">Notes</h2>
-      <ul class="list-disc ml-5 text-sm leading-7">
-        <li>Dataset: PlantVillage (leaf images).</li>
-        <li>Notebook-driven preprocessing and training.</li>
-        <li>Repository archived and read-only.</li>
+    <!-- Right: Info -->
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Potato Disease Classification · Computer Vision & Deployment</h1>
+      <p class="text-zinc-600 mb-4">
+        Inspired by PlantVillage and industry tutorials, I implemented a full ML workflow for 
+        potato disease detection: from preprocessing and CNN model training to FastAPI serving, 
+        React/React Native interfaces, and deployment on GCP with TensorFlow Serving & TF Lite.
+      </p>
+
+      <h2 class="font-semibold text-lg mb-1">Highlights</h2>
+      <ul class="list-disc ml-5 text-sm text-zinc-700 leading-6 mb-4">
+        <li>Data preprocessing and training pipelines in Jupyter Notebooks.</li>
+        <li>Custom CNN model achieving robust leaf disease classification.</li>
+        <li>FastAPI backend for inference with Dockerized deployment.</li>
+        <li>Frontend in React (web) and React Native (mobile).</li>
+        <li>TF Lite model deployed on GCP Functions for mobile efficiency.</li>
+        <li>Explored scalable hosting using TensorFlow Serving + Docker.</li>
       </ul>
-      <div class="mt-3 text-xs text-zinc-500">Archived repo details. :contentReference[oaicite:3]{index=3}</div>
-    </section>
 
-    <section class="card">
-      <h2 class="font-semibold mb-2">Stack</h2>
-      <div class="flex flex-wrap gap-2 text-xs">
-        <span class="px-2 py-1 rounded-full bg-zinc-100">Jupyter</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">Python</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">CV/ML</span>
+      <h2 class="font-semibold text-lg mb-1">Stack</h2>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="chip">Python</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">React</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Docker</span>
+        <span class="chip">GCP</span>
+        <span class="chip">Jupyter</span>
       </div>
-    </section>
+
+      <div class="flex gap-3">
+        <a href="https://github.com/rtamirasa/potatodisease" target="_blank" class="px-4 py-2 rounded-xl border border-zinc-300 text-sm">GitHub</a>
+      </div>
+    </div>
   </div>
 </main>
-</body></html>
+</body>
+</html>

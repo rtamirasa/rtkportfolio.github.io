@@ -1,46 +1,84 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FullStackWeb (Social) · Ridhi Tamirasa</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui']},colors:{brand:{600:'#4f46e5'}}}}}</script>
-<style>.card{--tw-shadow:0 10px 25px -10px rgba(0,0,0,.25);border-radius:1rem;padding:1.5rem;border:1px solid #e5e7eb}</style>
-</head><body class="bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
-<main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
-  <header class="flex items-center justify-between">
-    <a href="/" class="text-sm text-zinc-500 hover:text-zinc-800">← Back</a>
-    <a href="https://socialmedia-pi-three.vercel.app" target="_blank" class="px-4 py-2 rounded-xl bg-brand-600 text-white">Live Demo</a>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FullStackWeb (Social) · Ridhi Tamirasa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: { 600: '#4f46e5' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    .card {
+      --tw-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.25);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+    }
+    .chip {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 9999px;
+      background-color: #f4f4f5; /* zinc-100 */
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-8">
+    <header class="flex items-center justify-between">
+      <a href="C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\index.html" class="text-sm text-zinc-500 hover:text-zinc-800">← Back</a>
+      <a href="https://socialmedia-pi-three.vercel.app" target="_blank" class="px-4 py-2 rounded-xl bg-brand-600 text-white">Live Demo</a>
+    </header>
 
-  <h1 class="text-3xl sm:text-4xl font-extrabold">FullStackWeb (MERN social)</h1>
-  <p class="text-zinc-600">A MERN social app with JWT auth, likes, and dark mode. Fully responsive.</p>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <section class="card">
-      <h2 class="font-semibold mb-2">Highlights</h2>
-      <ul class="list-disc ml-5 text-sm leading-7">
-        <li>JWT-based login/registration.</li>
-        <li>Like/engagement on posts.</li>
-        <li>Dark mode UX.</li>
-        <li>Client/server split with React + Express.</li>
-      </ul>
-      <div class="mt-3 text-xs text-zinc-500">From repo README. :contentReference[oaicite:1]{index=1}</div>
-    </section>
-
-    <section class="card">
-      <h2 class="font-semibold mb-2">Stack</h2>
-      <div class="flex flex-wrap gap-2 text-xs">
-        <span class="px-2 py-1 rounded-full bg-zinc-100">MongoDB</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">Express</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">React</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">Node</span>
-        <span class="px-2 py-1 rounded-full bg-zinc-100">MUI</span>
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <!-- Left: Image -->
+      <div class="rounded-xl overflow-hidden shadow-md">
+        <img src="C:\Users\Ridhi Tamirasa\portfilio\rtkportfolio.github.io\Images\homepage.png" alt="FullStackWeb social app screenshot" class="w-full h-auto object-cover">
       </div>
-      <div class="mt-4 flex gap-2">
-        <a class="px-3 py-2 rounded-xl border" href="https://github.com/rtamirasa/fullstackweb1" target="_blank">GitHub</a>
-        <a class="px-3 py-2 rounded-xl border" href="https://socialmedia-pi-three.vercel.app" target="_blank">Live</a>
+
+      <!-- Right: Info -->
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">FullStackWeb · Social MERN Application</h1>
+        <p class="text-zinc-600 mb-4">
+          A responsive social platform with secure JWT authentication, like functionality, and a global dark mode.
+          Built with the MERN stack and Material-UI, featuring a clean UI and a RESTful API with role-based protected routes.
+        </p>
+
+        <h2 class="font-semibold text-lg mb-1">Highlights</h2>
+        <ul class="list-disc ml-5 text-sm text-zinc-700 leading-6 mb-4">
+          <li>Authentication: registration/login with <strong>JWT</strong>, protected routes, and persisted sessions.</li>
+          <li>Social features: like/unlike posts with database persistence and instant UI feedback.</li>
+          <li>Dark mode: toggle with saved user preference across sessions.</li>
+          <li>Responsive UI: <strong>React</strong> + <strong>Material-UI</strong> component library and theming.</li>
+          <li>Backend: <strong>Express</strong> REST API, <strong>Mongoose</strong> models, and modular route/controllers.</li>
+          <li>Project structure: clean separation of <code>/client</code> and <code>/server</code> with environment-based configs.</li>
+        </ul>
+
+        <h2 class="font-semibold text-lg mb-1">Stack</h2>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="chip">MongoDB</span>
+          <span class="chip">Express</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Material-UI</span>
+          <span class="chip">JWT</span>
+        </div>
+
+        <div class="flex gap-3">
+          <a href="https://github.com/rtamirasa/fullstackweb1" target="_blank" class="px-4 py-2 rounded-xl border border-zinc-300 text-sm">GitHub</a>
+          <a href="https://socialmedia-pi-three.vercel.app" target="_blank" class="px-4 py-2 rounded-xl border border-zinc-300 text-sm">Live</a>
+        </div>
       </div>
-    </section>
-  </div>
-</main>
-</body></html>
+    </div>
+  </main>
+</body>
+</html>
