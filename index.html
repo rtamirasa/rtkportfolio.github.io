@@ -406,136 +406,182 @@
 <section id="projects" class="py-12 reveal">
   <h2 class="text-4xl font-bold text-left">My Projects</h2>
 
-  <!-- Filters -->
-  <div class="mt-4 flex flex-wrap gap-2">
-    <button class="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 text-sm filter-btn is-active" data-filter="all">All</button>
-    <button class="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 text-sm filter-btn" data-filter="swe">SWE / Full-stack</button>
-    <button class="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 text-sm filter-btn" data-filter="ml">ML / AI</button>
-    <button class="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 text-sm filter-btn" data-filter="data">Data / Scraping</button>
+  <div class="mt-8 grid gap-6 sm:grid-cols-3">
+<!-- PassTheAux -->
+<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+  <!-- Thumbnail -->
+  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
+     <img src="Images/pass-theaux2.png"
+         alt="PassTheAux app preview"
+         class="object-cover h-full w-full">
   </div>
 
-  <!-- Grid -->
-  <div id="projectsGrid" class="mt-8 grid gap-6 sm:grid-cols-3">
+  <!-- Title -->
+  <h3 class="font-semibold text-lg">PassTheAux — Collaborative Music Queue</h3>
 
-    <!-- PassTheAux -->
-    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700"
-             data-cat="swe,web">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-        <img src="images/pass-theaux2.png" alt="PassTheAux app preview" class="object-cover h-full w-full">
-      </div>
-      <h3 class="font-semibold text-lg">PassTheAux — Collaborative Music Queue</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        Group sessions, recommendations, and queue voting with Spotify/Apple integrations.
-      </p>
-      <div class="mt-3 flex flex-wrap gap-2">
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TypeScript</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Firebase</span>
-      </div>
-      <div class="mt-4 flex gap-2">
-        <a class="btn" href="https://github.com/aneerati/Pass-The-Aux" target="_blank">GitHub</a>
-        <a class="btn" href="projects/passtheaux.html">Details</a>
-      </div>
-    </article>
+  <!-- Short description -->
+  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+    A web app that lets groups host or join music sessions, recommend tracks, vote on the queue,
+    and integrate Spotify/Apple Music for seamless group listening.
+  </p>
 
+  <!-- Tech stack chips -->
+  <div class="mt-3 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TypeScript</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Firebase</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Spotify API</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Apple Music API</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 flex gap-2">
+    <a class="btn" href="https://github.com/aneerati/Pass-The-Aux" target="_blank">GitHub</a>
+    <a class="btn" href="projects/passtheaux.html">Details</a>
+  </div>
+</article>
+
+
+
+    
     <!-- Task Planner (MERN) -->
-    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700"
-             data-cat="swe,web">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-        <img src="images/taskplannerimag.png" alt="Task Planner MERN app preview" class="object-cover h-full w-full">
-      </div>
-      <h3 class="font-semibold text-lg">Task Planner — MERN Productivity App</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        CRUD, status tracking, and charts with a responsive MUI UI.
-      </p>
-      <div class="mt-4 flex gap-2">
-        <a class="btn" href="https://github.com/rtamirasa/taskplanner-MERN" target="_blank">GitHub</a>
-        <a class="btn" href="https://taskplanner-mern-269e.vercel.app/" target="_blank">Live</a>
-        <a class="btn" href="projects/taskplanner-mern.html">Details</a>
-      </div>
-    </article>
+<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+  <!-- Thumbnail -->
+  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
+    <img
+      src="Images/taskplannerimag.png"
+      alt="Task Planner MERN app preview"
+      class="object-cover h-full w-full">
+  </div>
 
-    <!-- CDC Protect -->
-    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700"
-             data-cat="ml,data">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-        <img src="images/photo-1655313719493-16ebe4906441.jpg" alt="CDC Project Preview" class="object-cover h-full w-full">
-      </div>
+  <!-- Title -->
+  <h3 class="font-semibold text-lg">Task Planner — MERN Productivity App</h3>
+
+  <!-- Short description -->
+  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+    Full-stack task manager with CRUD, status tracking (Completed/In-Progress/Pending),
+    and visual reports (bar & pie charts) with time-range filters. Responsive UI with Material-UI.
+  </p>
+
+  <!-- Tech stack chips -->
+  <div class="mt-3 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">MongoDB</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Express</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Node.js</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Material-UI</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Charts</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 flex gap-2">
+    <a class="btn" href="https://github.com/rtamirasa/taskplanner-MERN" target="_blank">GitHub</a>
+    <a class="btn" href="https://taskplanner-mern-269e.vercel.app/" target="_blank">Live</a>
+    <a class="btn" href="projects/taskplanner-mern.html">Details</a>
+  </div>
+</article>
+
+    <!--  CDC-->
+       <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+      <!-- Replace the gray box with an image -->
+<div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
+  <img src="Images/photo-1655313719493-16ebe4906441.jpg" alt="CDC Project Preview" class="object-cover h-full w-full">
+</div>
+
       <h3 class="font-semibold text-lg">CDC Protect — Packaging Analysis</h3>
       <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        Scraping + deep learning to analyze similarity between edibles and candy packaging.
+        Built web scraping pipelines and deep learning models to analyze similarities between cannabis edible packaging and children’s candy packaging. Work supported regulatory awareness for public safety.
       </p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">BeautifulSoup</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Selenium</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TensorFlow</span>
+        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">GCP</span>
+      </div>
       <div class="mt-4 flex gap-2">
         <a class="btn" href="projects/cdcweb1.html">Details</a>
         <a class="btn" href="#" target="_blank">Request Access</a>
       </div>
     </article>
 
+    <!-- FullStackWeb (Social app) -->
     <!-- FullStackWeb (MERN) -->
-    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700"
-             data-cat="swe,web">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-50 mb-4 flex items-center justify-center overflow-hidden">
-        <img src="images/homepage.png" alt="FullStackWeb MERN app preview" class="object-cover h-full w-full">
-      </div>
-      <h3 class="font-semibold text-lg">FullStackWeb — Responsive MERN Application</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        JWT auth, likes, dark mode; modern MUI front-end with REST API.
-      </p>
-      <div class="mt-4 flex gap-2">
-        <a class="btn" href="https://github.com/rtamirasa/fullstackweb1" target="_blank">GitHub</a>
-        <a class="btn" href="projects/fullstackweb1.html">Details</a>
-      </div>
-    </article>
+<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+  <!-- Thumbnail -->
+  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-50 mb-4 flex items-center justify-center overflow-hidden">
+    <img src="Images/homepage.png" 
+         alt="FullStackWeb MERN app preview"
+         class="object-cover h-full w-full">
+  </div>
 
-    <!-- Potato Disease (ML) -->
-    <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700"
-             data-cat="ml,ai">
-      <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-50 mb-4 flex items-center justify-center overflow-hidden">
-        <img src="images/share.png" alt="Potato Disease Classification Preview" class="object-cover h-full w-full">
-      </div>
-      <h3 class="font-semibold text-lg">Potato Disease — ML Classification</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        End-to-end CNN pipeline + FastAPI backend + React/React Native frontends.
-      </p>
-      <div class="mt-4 flex gap-2">
-        <a class="btn" href="https://github.com/rtamirasa/potatodisease" target="_blank">GitHub</a>
-        <a class="btn" href="projects/potatodisease.html">Details</a>
-      </div>
-    </article>
+  <!-- Title -->
+  <h3 class="font-semibold text-lg">FullStackWeb — Responsive MERN Application</h3>
+
+  <!-- Short description -->
+  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+    A full-stack web application with JWT authentication, like functionality, and dark mode. 
+    Built with the MERN stack and Material-UI, showcasing modern, user-focused design principles.
+  </p>
+
+  <!-- Tech stack chips -->
+  <div class="mt-3 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">MongoDB</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Express</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Node.js</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Material-UI</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">JWT</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 flex gap-2">
+    <a class="btn" href="https://github.com/rtamirasa/fullstackweb1" target="_blank">GitHub</a>
+    <a class="btn" href="projects/fullstackweb1.html">Details</a>
+  </div>
+</article>
+
+
+    <!-- Potato Disease -->
+ <!-- Potato Disease Classification -->
+<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+  <!-- Thumbnail -->
+  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-50 mb-4 flex items-center justify-center overflow-hidden">
+    <img src="Images/share.png" 
+         alt="Potato Disease Classification Preview"
+         class="object-cover h-full w-full">
+  </div>
+
+  <!-- Title -->
+  <h3 class="font-semibold text-lg">Potato Disease — ML Classification</h3>
+
+  <!-- Short description -->
+  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+    End-to-end deep learning pipeline for potato leaf disease detection.  
+    Includes data preprocessing, CNN training, FastAPI backend, React & React Native frontends, 
+    and deployment to GCP with TensorFlow Serving and TF Lite.
+  </p>
+
+  <!-- Tech stack chips -->
+  <div class="mt-3 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TensorFlow</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">FastAPI</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React Native</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">GCP</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Docker</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 flex gap-2">
+    <a class="btn" href="https://github.com/rtamirasa/potatodisease" target="_blank">GitHub</a>
+    <a class="btn" href="projects/potatodisease.html" >Details</a>
+  </div>
+</article>
 
   </div>
 </section>
-
-<script>
-  // simple client-side filter
-  (function () {
-    const grid = document.getElementById('projectsGrid');
-    const cards = [...grid.querySelectorAll('article')];
-    const buttons = [...document.querySelectorAll('.filter-btn')];
-
-    function applyFilter(key) {
-      cards.forEach(card => {
-        const cats = (card.dataset.cat || '').split(',').map(s => s.trim());
-        const show = key === 'all' || cats.includes(key);
-        card.classList.toggle('hidden', !show);
-      });
-      buttons.forEach(b => b.classList.toggle('is-active', b.dataset.filter === key));
-    }
-
-    buttons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
-
-    // basic active state styling
-    const style = document.createElement('style');
-    style.textContent = `
-      .filter-btn.is-active{ background:rgba(99,102,241,.12); border-color:rgba(99,102,241,.35); }
-      .dark .filter-btn.is-active{ background:rgba(99,102,241,.18); border-color:rgba(99,102,241,.5); }
-    `;
-    document.head.appendChild(style);
-
-    applyFilter('all'); // initial
-  })();
-</script>
-
 
 <style>
   .btn {
