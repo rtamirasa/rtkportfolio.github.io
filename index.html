@@ -407,6 +407,39 @@
   <h2 class="text-4xl font-bold text-left">My Projects</h2>
 
   <div class="mt-8 grid gap-6 sm:grid-cols-3">
+<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
+  <!-- Thumbnail -->
+  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
+    <img src="./images/mcpserver.png"
+         alt="MCP Server project preview"
+         class="object-cover h-full w-full">
+  </div>
+
+  <!-- Title -->
+  <h3 class="font-semibold text-lg">MCP Server — Modular Diagnostic Platform</h3>
+
+  <!-- Short description -->
+  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
+    Designed and deployed a modular command platform (MCP) that automates system diagnostics and
+    enables integration with AI agents. Built to improve reliability, scalability, and developer
+    experience while streamlining tool execution.
+  </p>
+
+  <!-- Tech stack chips -->
+  <div class="mt-3 flex flex-wrap gap-2">
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">FastAPI</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">LangChain</span>
+    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">OpenVINO</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 flex gap-2">
+    <a class="btn" href="https://github.com/rtamiras/mcp-server-demo" target="_blank">GitHub</a>
+    <a class="btn" href="projects/mcpserver.html">Details</a>
+  </div>
+</article>
+
 <!-- PassTheAux -->
 <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
   <!-- Thumbnail -->
@@ -449,7 +482,7 @@
   <!-- Thumbnail -->
   <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
     <img
-      src="images/taskplannerimag.png"
+      src="./images/taskplannerimag.png"
       alt="Task Planner MERN app preview"
       class="object-cover h-full w-full">
   </div>
