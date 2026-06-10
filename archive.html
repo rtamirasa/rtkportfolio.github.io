@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Archive · Ridhi Tamirasa</title>
+  <meta name="description" content="A full archive of Ridhi Tamirasa's earlier projects — coursework, hackathons, and high-school STEM builds." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='71' font-size='60' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-weight='bold'%3ER%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+        colors: { brand: { 50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81' } }
+      } }
+    }
+  </script>
+  <!-- Apply saved dark-mode preference before paint -->
+  <script>
+    try { if (localStorage.getItem('rt-dark') === '1') document.documentElement.classList.add('dark'); } catch (e) {}
+  </script>
+  <style>
+    .chip{display:inline-flex;align-items:center;border-radius:9999px;padding:.2rem .6rem;font-size:.7rem;
+      border:1px solid #e4e4e7;background:#f4f4f5;color:#18181b;}
+    .dark .chip{border-color:#3f3f46;background:#27272a;color:#fafafa;}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-900 dark:to-black text-zinc-900 dark:text-zinc-100 font-sans">
+  <header class="sticky top-0 z-10 backdrop-blur bg-white/70 dark:bg-zinc-900/60 border-b border-zinc-200/70 dark:border-zinc-800/70">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between py-3 px-4">
+      <a href="index.html" class="text-sm text-zinc-500 hover:text-brand-500">← Ridhi Tamirasa</a>
+      <button id="modeToggle" class="p-2 rounded-xl border border-zinc-300 dark:border-zinc-700" aria-label="Toggle dark mode">
+        <svg class="h-5 w-5 text-yellow-500 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.95l.71-.71M21 12h-1M4 12H3m15.66 7.66l-.71-.71M6.34 6.34l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg class="h-5 w-5 text-zinc-200 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <a href="index.html#projects" class="text-sm text-brand-500 hover:text-brand-700">← Back to featured projects</a>
+    <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">Project Archive</h1>
+    <p class="mt-3 text-zinc-500 max-w-prose">A fuller list of things I've built over the years — coursework, hackathons, and early high-school STEM projects.</p>
+
+    <div class="mt-10 overflow-x-auto">
+      <table class="w-full border-collapse text-sm">
+        <thead>
+          <tr class="text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-800">
+            <th class="py-3 pr-4 font-medium">Year</th>
+            <th class="py-3 pr-4 font-medium">Project</th>
+            <th class="py-3 pr-4 font-medium hidden sm:table-cell">Made at</th>
+            <th class="py-3 pr-4 font-medium hidden md:table-cell">Built with</th>
+            <th class="py-3 font-medium">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2026</td>
+            <td class="py-4 pr-4 align-top font-semibold">Catapult Shopping</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Hackathon</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">Hackathon build</span></div></td>
+            <td class="py-4 align-top"><a href="https://github.com/rtamirasa/catapultshopping" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">GitHub ↗</a></td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2024</td>
+            <td class="py-4 pr-4 align-top font-semibold">Task Planner</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Personal</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Material-UI</span><span class="chip">Charts</span></div></td>
+            <td class="py-4 align-top"><div class="flex flex-col gap-1"><a href="https://github.com/rtamirasa/taskplanner-MERN" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">GitHub ↗</a><a href="https://taskplanner-mern-269e.vercel.app/" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">Live ↗</a><a href="projects/taskplanner-mern.html" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">Details ↗</a></div></td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2024</td>
+            <td class="py-4 pr-4 align-top font-semibold">FullStackWeb</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Personal</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Material-UI</span><span class="chip">JWT</span></div></td>
+            <td class="py-4 align-top"><div class="flex flex-col gap-1"><a href="https://github.com/rtamirasa/fullstackweb1" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">GitHub ↗</a><a href="projects/fullstackweb1.html" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">Details ↗</a></div></td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2023</td>
+            <td class="py-4 pr-4 align-top font-semibold">Pantry Manager</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Personal</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">Next.js</span><span class="chip">Firebase</span></div></td>
+            <td class="py-4 align-top"><a href="projects/pantry-managment.html" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">Details ↗</a></td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2023</td>
+            <td class="py-4 pr-4 align-top font-semibold">Shell &amp; Compiler Suite</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Purdue · CS 250–252</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">C</span><span class="chip">x86</span><span class="chip">Compilers</span></div></td>
+            <td class="py-4 align-top text-zinc-400 whitespace-nowrap">—</td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2023</td>
+            <td class="py-4 pr-4 align-top font-semibold">AWS Netflix Analytics Clone</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Personal</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">AWS</span><span class="chip">QuickSight</span></div></td>
+            <td class="py-4 align-top text-zinc-400 whitespace-nowrap">—</td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2022</td>
+            <td class="py-4 pr-4 align-top font-semibold">Shopping Market System</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Purdue · CS 180</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">Java</span></div></td>
+            <td class="py-4 align-top text-zinc-400 whitespace-nowrap">—</td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2021</td>
+            <td class="py-4 pr-4 align-top font-semibold">AP Computer Science A Projects</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">High School</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">Java</span><span class="chip">Greenfoot</span></div></td>
+            <td class="py-4 align-top"><a href="https://github.com/tekotan/GreenfootSeatingChartMerged" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">GitHub ↗</a></td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2021</td>
+            <td class="py-4 pr-4 align-top font-semibold">Digital Electronics</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">High School</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">Logic Design</span></div></td>
+            <td class="py-4 align-top text-zinc-400 whitespace-nowrap">—</td>
+          </tr>
+          <tr class="border-b border-zinc-100 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2020</td>
+            <td class="py-4 pr-4 align-top font-semibold">Rosetta Institute — Biomedical Research</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">Summer Program</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">JMOL</span><span class="chip">STRING</span><span class="chip">Manhattan Plot</span><span class="chip">Medical Research</span></div></td>
+            <td class="py-4 align-top"><a href="https://docs.google.com/presentation/d/1Q62a-i4RSavTnj0sfithsXFvvYKYOIsGm2ARy0dGrMk/present?slide=id.p" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">Slides ↗</a></td>
+          </tr>
+          <tr class="hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-colors">
+            <td class="py-4 pr-4 align-top text-zinc-500 tabular-nums whitespace-nowrap">2019</td>
+            <td class="py-4 pr-4 align-top font-semibold">Intro Engineering Design</td>
+            <td class="py-4 pr-4 align-top text-zinc-500 hidden sm:table-cell">High School</td>
+            <td class="py-4 pr-4 align-top hidden md:table-cell"><div class="flex flex-wrap gap-1.5"><span class="chip">AutoCAD</span></div></td>
+            <td class="py-4 align-top"><a href="https://youtu.be/Pd4sV0z6XYo?feature=shared" target="_blank" rel="noopener" class="text-brand-500 hover:text-brand-700 whitespace-nowrap">YouTube ↗</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 py-12 text-center text-xs text-zinc-500">© <span id="year"></span> Ridhi Tamirasa</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('modeToggle');
+    const setMode = (d) => { document.documentElement.classList.toggle('dark', d); localStorage.setItem('rt-dark', d ? '1' : '0'); };
+    toggle.addEventListener('click', () => setMode(!document.documentElement.classList.contains('dark')));
+  </script>
+</body>
+</html>
