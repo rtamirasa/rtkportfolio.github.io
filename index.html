@@ -436,242 +436,120 @@
 <section id="projects" class="py-12 reveal">
   <h2 class="text-4xl font-bold text-left">My Projects</h2>
 
-  <div class="mt-8 grid gap-6 sm:grid-cols-3">
+  <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
 <!-- Run It Back (Senior Design) -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-    <img src="./images/run-it-back-map.png"
-         alt="Run It Back app — nearby pickup sessions on a map"
-         class="object-cover object-top h-full w-full">
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+    <img src="./images/run-it-back-map.png" alt="Run It Back app — nearby pickup sessions on a map"
+         class="h-full w-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
   </div>
-  <h3 class="font-semibold text-lg">Run It Back — Pickup Sports App</h3>
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    Senior design project: a cross-platform mobile app for organizing pickup sports. Hosts schedule
-    sessions on a map, players discover and join nearby games with filters, QR/code check-in, group
-    chat, notifications, and a “Run It Back” flow to re-rally the same group.
-  </p>
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React Native</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Expo</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Node.js</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">AWS Amplify</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React Native Maps</span>
-  </div>
-  <div class="mt-4 flex gap-2">
-    <a class="btn" href="https://github.com/abennur33/Run-It-Back" target="_blank">GitHub</a>
-    <a class="btn" href="projects/run-it-back.html">Details</a>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">Run It Back</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Mobile app to find, host, and join nearby pickup sports games.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">React Native</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Expo</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">AWS Amplify</span>
+    </div>
+    <div class="mt-auto pt-4 flex gap-4 text-sm">
+      <a class="text-brand-600 hover:text-brand-700" href="https://github.com/abennur33/Run-It-Back" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="text-brand-600 hover:text-brand-700" href="projects/run-it-back.html">Details →</a>
+    </div>
   </div>
 </article>
 
 <!-- Ciroos: LLM Evaluation Framework -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <div class="rounded-xl h-40 mb-4 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-500 to-brand-800 text-white">
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] flex items-center justify-center bg-gradient-to-br from-brand-500 to-brand-800 text-white">
     <span class="text-4xl">⚖️</span>
   </div>
-  <h3 class="font-semibold text-lg">LLM Evaluation Framework — Ciroos</h3>
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    An evaluation system that benchmarks LLMs on latency, token use, and quality, with automated
-    “LLM-as-a-Judge” workflows for scalable model comparison and reporting.
-  </p>
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Baseten</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">LLM-as-a-Judge</span>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">LLM Evaluation Framework</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Benchmarks LLMs on latency, cost, and quality with automated LLM-as-a-Judge scoring.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Python</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Baseten</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">LLM-as-a-Judge</span>
+    </div>
+    <div class="mt-auto pt-4 text-xs text-zinc-400">Ciroos · proprietary</div>
   </div>
-  <div class="mt-4 text-xs text-zinc-500">Ciroos · proprietary</div>
 </article>
 
 <!-- Ciroos: Document Intelligence -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <div class="rounded-xl h-40 mb-4 flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-700 text-white">
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] flex items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-700 text-white">
     <span class="text-4xl">📄</span>
   </div>
-  <h3 class="font-semibold text-lg">Document Intelligence — Ciroos</h3>
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    Document-to-JSON parsing pipelines built with Docling, Pydantic, and Claude agents, improving
-    schema consistency and reducing hallucinations across structured extraction.
-  </p>
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Docling</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Pydantic</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Claude Agents</span>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">Document Intelligence</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Document-to-JSON pipelines with Claude agents for reliable structured extraction.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Docling</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Pydantic</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Claude Agents</span>
+    </div>
+    <div class="mt-auto pt-4 text-xs text-zinc-400">Ciroos · proprietary</div>
   </div>
-  <div class="mt-4 text-xs text-zinc-500">Ciroos · proprietary</div>
 </article>
 
 <!-- Ciroos: Real-Time Visual Analytics -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <div class="rounded-xl h-40 mb-4 flex items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-500 to-blue-700 text-white">
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] flex items-center justify-center bg-gradient-to-br from-cyan-500 to-blue-700 text-white">
     <span class="text-4xl">📊</span>
   </div>
-  <h3 class="font-semibold text-lg">Visual Analytics Platform — Ciroos</h3>
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    A serverless dashboard analytics tool that captures and stores authenticated dashboard
-    screenshots, using Vision-Language Models to interpret charts and surface actionable insights.
-  </p>
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Serverless</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Vision-Language Models</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">AWS</span>
-  </div>
-  <div class="mt-4 text-xs text-zinc-500">Ciroos · proprietary</div>
-</article>
-
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <!-- Thumbnail -->
-  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-    <img src="./images/image.png"
-         alt="MCP Server project preview"
-         class="object-cover h-full w-full">
-  </div>
-
-  <!-- Title -->
-  <h3 class="font-semibold text-lg">MCP Server — AI-Powered Diagnostic Platform</h3>
-
-  <!-- Short description -->
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    Architected and deployed a modular diagnostic platform for Intel’s Battery Life Diagnostic Tool,
-    integrating reinforcement learning pipelines and local LLMs to automate system analysis. 
-    Enhanced reliability, reduced setup overhead, and enabled fully offline AI-powered diagnostics.
-  </p>
-
-  <!-- Tech stack chips -->
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">LangChain</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">OpenVINO</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Qwen</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Reinforcement Learning</span>
-  </div>
-
-  <!-- Buttons -->
-  <div class="mt-4 flex gap-2">
-    <a class="btn" href="https://github.com/rtamiras/mcp-server-demo" target="_blank">GitHub</a>
-    <a class="btn" href="projects/mcpserver.html">Details</a>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">Visual Analytics Platform</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Serverless tool that reads dashboards with vision models to surface insights.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Serverless</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Vision-Language Models</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">AWS</span>
+    </div>
+    <div class="mt-auto pt-4 text-xs text-zinc-400">Ciroos · proprietary</div>
   </div>
 </article>
 
+<!-- MCP Server -->
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+    <img src="./images/image.png" alt="MCP Server project preview"
+         class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300">
+  </div>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">MCP Server</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Modular diagnostic platform with local LLMs and RL for offline AI-powered analysis at Intel.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Python</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">LangChain</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">OpenVINO</span>
+    </div>
+    <div class="mt-auto pt-4 flex gap-4 text-sm">
+      <a class="text-brand-600 hover:text-brand-700" href="https://github.com/rtamiras/mcp-server-demo" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="text-brand-600 hover:text-brand-700" href="projects/mcpserver.html">Details →</a>
+    </div>
+  </div>
+</article>
 
 <!-- PassTheAux -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <!-- Thumbnail -->
-  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-     <img src="./images/pass-theaux2.png"
-         alt="PassTheAux app preview"
-         class="object-cover h-full w-full">
+<article class="group flex flex-col rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-white/60 dark:bg-zinc-900/50 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-lg transition">
+  <div class="aspect-[16/10] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+    <img src="./images/pass-theaux2.png" alt="PassTheAux app preview"
+         class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300">
   </div>
-
-  <!-- Title -->
-  <h3 class="font-semibold text-lg">PassTheAux — Collaborative Music Queue</h3>
-
-  <!-- Short description -->
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    A web app that lets groups host or join music sessions, recommend tracks, vote on the queue,
-    and integrate Spotify/Apple Music for seamless group listening.
-  </p>
-
-  <!-- Tech stack chips -->
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TypeScript</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Firebase</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Spotify API</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Apple Music API</span>
+  <div class="flex flex-col flex-1 p-4">
+    <h3 class="font-semibold">PassTheAux</h3>
+    <p class="mt-1 text-sm text-zinc-500 line-clamp-2">Collaborative music queue — groups vote on tracks with Spotify &amp; Apple Music.</p>
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">React</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Firebase</span>
+      <span class="text-[11px] px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">Spotify API</span>
+    </div>
+    <div class="mt-auto pt-4 flex gap-4 text-sm">
+      <a class="text-brand-600 hover:text-brand-700" href="https://github.com/aneerati/Pass-The-Aux" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="text-brand-600 hover:text-brand-700" href="projects/passtheaux.html">Details →</a>
+    </div>
   </div>
-
-  <!-- Buttons -->
-  <div class="mt-4 flex gap-2">
-    <a class="btn" href="https://github.com/aneerati/Pass-The-Aux" target="_blank">GitHub</a>
-    <a class="btn" href="projects/passtheaux.html">Details</a>
-  </div>
-</article>
-
-
-
-    
-    <!--  CDC-->
-       <article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-      <!-- Replace the gray box with an image -->
-<div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-40 mb-4 flex items-center justify-center overflow-hidden">
-  <img src="./images/cdc-analysis.png" alt="CDC Project Preview" class="object-cover h-full w-full">
-</div>
-
-      <h3 class="font-semibold text-lg">CDC Protect — Packaging Analysis</h3>
-      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-        Built web scraping pipelines and deep learning models to analyze similarities between cannabis edible packaging and children’s candy packaging. Work supported regulatory awareness for public safety.
-      </p>
-      <div class="mt-3 flex flex-wrap gap-2">
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">BeautifulSoup</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Selenium</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TensorFlow</span>
-        <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">GCP</span>
-      </div>
-      <div class="mt-4 flex gap-2">
-        <a class="btn" href="projects/cdcweb1.html">Details</a>
-        <a class="btn" href="#" target="_blank">Request Access</a>
-      </div>
-    </article>
-
-
-
-    <!-- Potato Disease -->
- <!-- Potato Disease Classification -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <!-- Thumbnail -->
-  <div class="rounded-xl bg-zinc-100 dark:bg-zinc-800 h-50 mb-4 flex items-center justify-center overflow-hidden">
-    <img src="./images/share.png" 
-         alt="Potato Disease Classification Preview"
-         class="object-cover h-full w-full">
-  </div>
-
-  <!-- Title -->
-  <h3 class="font-semibold text-lg">Potato Disease — ML Classification</h3>
-
-  <!-- Short description -->
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    End-to-end deep learning pipeline for potato leaf disease detection.  
-    Includes data preprocessing, CNN training, FastAPI backend, React & React Native frontends, 
-    and deployment to GCP with TensorFlow Serving and TF Lite.
-  </p>
-
-  <!-- Tech stack chips -->
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">TensorFlow</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">FastAPI</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">React Native</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">GCP</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Docker</span>
-  </div>
-
-  <!-- Buttons -->
-  <div class="mt-4 flex gap-2">
-    <a class="btn" href="https://github.com/rtamirasa/potatodisease" target="_blank">GitHub</a>
-    <a class="btn" href="projects/potatodisease.html" >Details</a>
-  </div>
-</article>
-
-<!-- Kaggle Data Science Competition -->
-<article class="card flex flex-col p-4 border rounded-xl shadow-md dark:border-zinc-700">
-  <div class="rounded-xl h-40 mb-4 flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-500 to-orange-700 text-white">
-    <span class="text-4xl">🏆</span>
-  </div>
-  <h3 class="font-semibold text-lg">Kaggle Data Science Competition</h3>
-  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-    Built models to predict 7-day customer purchase patterns, using MAP@12 for relevance ranking and
-    feature engineering for accuracy. Collaborated on feature selection and ensemble techniques for
-    robust leaderboard performance.
-  </p>
-  <div class="mt-3 flex flex-wrap gap-2">
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Python</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Scikit-learn</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Pandas</span>
-    <span class="px-3 py-1 rounded-full bg-brand-200 text-sm font-medium text-brand-800">Kaggle</span>
-  </div>
-  <div class="mt-4 text-xs text-zinc-500">Purdue University</div>
 </article>
 
   </div>
